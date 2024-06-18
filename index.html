@@ -1,0 +1,239 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Card</title>
+    <style>
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 50vh;
+            margin: 0;
+            background-color: #121212;
+            font-family: 'Arial', sans-serif;
+        }
+        
+        .container {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        
+        .card {
+            background: #1e1e1e;
+            border-radius: 15px;
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.5);
+            text-align: center;
+            height: 320px;
+            width: 400px;
+            padding: 20px;
+            transition: transform 0.3s, box-shadow 0.3s;
+            border: 1px solid #ffffff;
+        }
+        
+        .card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 8px 24px rgba(133, 133, 133, 0.7);
+        }
+        
+        .card h1 {
+            margin: 10px 0;
+            color: #fff;
+        }
+        
+        .title {
+            display: flex;
+            justify-content: center;
+            text-align: center;
+        }
+        
+        .title h1 {
+            font-size: 24px;
+            font-weight: bold;
+            color: #ffa726;
+        }
+        
+        .title img {
+            height: 20px;
+            margin-top: 13.5px;
+            margin-right: 10px;
+        }
+        
+        .sub_title h3 {
+            font-size: 20px;
+            font-weight: normal;
+            color: #ffffff;
+        }
+        
+        .numberONE h1 {
+            font-size: 58px;
+            font-weight: normal;
+            color: #ffffff;
+        }
+        
+        .numberTWO {
+            margin-top: 20px;
+        }
+        
+        .numberTWO h1 {
+            color: rgb(83, 206, 228);
+        }
+        
+        .numberTWO img {
+            max-width: 100%;
+            border-radius: 10px;
+            margin-right: 10px;
+        }
+        /**/
+        
+        #marquee-container {
+            overflow: hidden;
+            white-space: nowrap;
+            height: 60px;
+            width: 400px;
+            /* Ajuste conforme necessário */
+            margin-top: 20px;
+        }
+        
+        #marquee-content {
+            display: inline-block;
+            text-align: center;
+            animation: scroll 15s linear infinite;
+        }
+        
+        .country {
+            border-left: 1px solid rgb(255, 255, 255);
+            display: inline-block;
+            height: 35px;
+            margin-top: 10px;
+            padding-left: 25px;
+            padding-right: 25px;
+        }
+        
+        .country h3 {
+            margin-top: 10px;
+            color: #fff;
+            margin-left: 20px;
+        }
+        
+        .country span {
+            color: #fcfcfc;
+        }
+        
+        .country img {
+            height: 20px;
+            width: 20px;
+            margin-top: 9.5px;
+        }
+        
+        @keyframes scroll {
+            0% {
+                transform: translateX(0);
+            }
+            100% {
+                transform: translateX(-50%);
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div class="card">
+            <div class="title">
+                <img src="img/dolar2.png" alt="">
+                <h1>Faturamento</h1>
+            </div>
+            <div class="sub_title">
+                <h3>Em média de faturamento mensal</h3>
+            </div>
+            <div class="numberONE">
+                <h1>R$ 374 M</h1>
+            </div>
+            <div class="numberTWO" style="display: flex; align-items: center;">
+                <img src="./img/triangulo.png" alt="Imagem">
+                <h1>100%</h1>
+            </div>
+            <div id="marquee-container">
+                <div id="marquee-content">
+                    <div class="country">
+                        <div style="display: flex;">
+                            <img src="./img/brasil.png" alt="">
+                            <h3>Brasil</h3>
+                            <h3 style="color: aquamarine;">R$ <span>452</span></h3>
+                        </div>
+                    </div>
+                    <div class="country">
+                        <div style="display: flex;">
+                            <img src="./img/usa.png" alt="">
+                            <h3>USA</h3>
+                            <h3 style="color: aquamarine;">R$ <span>452</span></h3>
+                        </div>
+                    </div>
+                    <div class="country">
+                        <div style="display: flex;">
+                            <img src="./img/portugal.png" alt="">
+                            <h3>Portugal</h3>
+                            <h3 style="color: aquamarine;">R$ <span>452</span></h3>
+                        </div>
+                    </div>
+                    <div class="country">
+                        <div style="display: flex;">
+                            <img src="./img/alemanha.png" alt="">
+                            <h3>Alemanhã</h3>
+                            <h3 style="color: aquamarine;">R$ <span>452</span></h3>
+                        </div>
+                    </div>
+                    <div class="country">
+                        <div style="display: flex;">
+                            <img src="./img/espanha.png" alt="">
+                            <h3>Espanha</h3>
+                            <h3 style="color: aquamarine;">R$ <span>452</span></h3>
+                        </div>
+                    </div>
+                    <div class="country">
+                        <div style="display: flex;">
+                            <img src="./img/brasil.png" alt="">
+                            <h3>Brasil</h3>
+                            <h3 style="color: aquamarine;">R$ <span>452</span></h3>
+                        </div>
+                    </div>
+                    <div class="country">
+                        <div style="display: flex;">
+                            <img src="./img/usa.png" alt="">
+                            <h3>USA</h3>
+                            <h3 style="color: aquamarine;">R$ <span>452</span></h3>
+                        </div>
+                    </div>
+                    <div class="country">
+                        <div style="display: flex;">
+                            <img src="./img/portugal.png" alt="">
+                            <h3>Portugal</h3>
+                            <h3 style="color: aquamarine;">R$ <span>452</span></h3>
+                        </div>
+                    </div>
+                    <div class="country">
+                        <div style="display: flex;">
+                            <img src="./img/alemanha.png" alt="">
+                            <h3>Alemanhã</h3>
+                            <h3 style="color: aquamarine;">R$ <span>452</span></h3>
+                        </div>
+                    </div>
+                    <div class="country">
+                        <div style="display: flex;">
+                            <img src="./img/espanha.png" alt="">
+                            <h3>Espanha</h3>
+                            <h3 style="color: aquamarine;">R$ <span>452</span></h3>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
